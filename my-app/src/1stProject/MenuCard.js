@@ -4,6 +4,13 @@ import "./resStyle.css"
 
 
 const MenuCard = ({ menuData }) => {
+    function order(){
+        return(
+            alert(`Thank you for your order!
+            Your order is recieved successfully. Please wait, your order will
+            ready in just 5-7 minutes`)
+        )
+    }
     return (
         <div id="main">
             {
@@ -24,7 +31,7 @@ const MenuCard = ({ menuData }) => {
                                         </span>
                                         <img src={imagePath} alt="Biryani" className="card-media" />
                                         
-                                        <button className="card-tag subtle">Order Now</button>
+                                        <button onClick={()=>{order()}} className="card-tag subtle">Order Now</button>
                                         </div>
                                     </div>
                                 </div>

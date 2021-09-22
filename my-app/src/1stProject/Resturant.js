@@ -7,7 +7,7 @@ const Resturant = () => {
    console.log(menuData)
    const filterItem= (category)=>{
     const listedItm= category==="All"?Menu: Menu.filter((currItm)=>{
-        return currItm.name==category;
+        return currItm.name===category;
     })
     setMenuData(listedItm)
    }
