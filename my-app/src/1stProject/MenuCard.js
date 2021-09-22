@@ -4,7 +4,7 @@ import "./resStyle.css"
 
 
 const MenuCard = ({ menuData }) => {
-    function order(){
+    const order= () => {
         return(
             alert(`Thank you for your order!
             Your order is recieved successfully. Please wait, your order will
